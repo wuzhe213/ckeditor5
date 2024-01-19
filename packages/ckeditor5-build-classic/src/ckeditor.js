@@ -36,6 +36,8 @@ import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
 import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
 
+import './custom.css';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
