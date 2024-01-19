@@ -5,8 +5,9 @@
     /* Overrides the default font size in the theme. */
     --ck-font-size-base: 14px;
 
---ck-color-base-background: hsl(0, 0%, 25%);
---ck-color-base-text: hsl(0, 0%, 90%);
+    --ck-color-base-background: hsl(0, 0%, 25%);
+    --ck-color-base-text: #b1b1b1;
+    /--ck-color-base-active-focus: hsl(218, 90%, 41%);
 
     /* Helper variables to avoid duplication in the colors. */
     --ck-custom-background: hsl(270, 1%, 29%);
@@ -17,7 +18,7 @@
     /* -- Overrides generic colors. ------------------------------------------------------------- */
 
     --ck-color-base-foreground: var(--ck-custom-background);
-    --ck-color-focus-border: hsl(208, 90%, 62%);
+    --ck-color-focus-border: hsl(208, 65%, 35%);
     --ck-color-text: hsl(0, 0%, 98%);
     --ck-color-shadow-drop: hsla(0, 0%, 0%, 0.2);
     --ck-color-shadow-inner: hsla(0, 0%, 0%, 0.1);
@@ -107,18 +108,23 @@
 
     --ck-color-link-default: hsl(190, 100%, 75%);
 
+    --ck-color-base-border: #6d6d6d;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    background-color: #202020;
 }
 
 .ck-editor__editable,.ck-source-editing-area {
     min-height: 450px;
-    color: #fdfdfd;
+    color: #d1d1d1;
 }
 
 
 .ck-content pre {
     padding: 1em;
-    color: #fdfdfd;
-    background: hsla(0, 0%, 50%, 0.3);
+    color: #d1d1d1;
+    background: #282828;
 }
 
 .ck.ck-editor__editable_inline. ::selection {
