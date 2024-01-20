@@ -109,24 +109,30 @@
     --ck-color-link-default: hsl(190, 100%, 75%);
 
     --ck-color-base-border: #6d6d6d;
+    --ck-focus-ring: none;
 }
 
 .ck.ck-editor__main>.ck-editor__editable {
-    background-color: #202020;
+    background-color: #121212;
 }
 
 .ck-editor__editable,.ck-source-editing-area {
     min-height: 450px;
-    color: #d1d1d1;
+    color: #b1b1b1;
 }
 
 
 .ck-content pre {
     padding: 1em;
-    color: #d1d1d1;
-    background: #282828;
+    color: #b1b1b1;
+    background: #212121;
+    border: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
-
+.ck.ck-editor__editable_inline {
+    border: none
+}
 .ck.ck-editor__editable_inline. ::selection {
     color: #303030;
 }
