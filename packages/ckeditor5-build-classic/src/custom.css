@@ -21,7 +21,7 @@
 
     --ck-color-base-foreground: var(--ck-custom-background);
     --ck-color-focus-border: hsl(208, 65%, 35%);
-    --ck-color-text: hsl(0, 0%, 98%);
+    --ck-color-text: #b1b1b1;
     --ck-color-shadow-drop: hsla(0, 0%, 0%, 0.2);
     --ck-color-shadow-inner: hsla(0, 0%, 0%, 0.1);
 
@@ -157,4 +157,9 @@ a.ck.ck-button:focus {
 
 .ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
     border: none;
+}
+
+.ck.ck-editor__editable pre[data-language]:after {
+    background: #3a3a3a;
+    color: #a39f9f;
 }
