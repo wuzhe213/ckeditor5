@@ -7,8 +7,10 @@
 
     --ck-color-base-background: hsl(0, 0%, 25%);
     --ck-color-base-text: #b1b1b1;
-    /--ck-color-base-active-focus: hsl(218, 90%, 41%);
-
+    --ck-color-base-active: hsl(240, 0%, 48%);
+    /*--ck-color-base-active-focus: hhsl(0, 0%, 90%);*/
+--ck-color-base-active-focus: hsl(0deg 0.94% 62.56%);
+--ck-color-button-on-color: #acaeb2;
     /* Helper variables to avoid duplication in the colors. */
     --ck-custom-background: hsl(270, 1%, 29%);
     --ck-custom-foreground: hsl(255, 3%, 18%);
@@ -26,8 +28,8 @@
     /* -- Overrides the default .ck-button class colors. ---------------------------------------- */
 
     --ck-color-button-default-background: var(--ck-custom-background);
-    --ck-color-button-default-hover-background: hsl(270, 1%, 22%);
-    --ck-color-button-default-active-background: hsl(270, 2%, 20%);
+    --ck-color-button-default-hover-background: hsl(220, 1%, 22%);
+    --ck-color-button-default-active-background: hsl(250, 2%, 20%);
     --ck-color-button-default-active-shadow: hsl(270, 2%, 23%);
     --ck-color-button-default-disabled-background: var(--ck-custom-background);
 
@@ -73,7 +75,7 @@
     /* -- Overrides the default .ck-list class colors. ------------------------------------------ */
 
     --ck-color-list-background: var(--ck-custom-background);
-    --ck-color-list-button-hover-background: var(--ck-color-base-foreground);
+    --ck-color-list-button-hover-background: #676667;
     --ck-color-list-button-on-background: var(--ck-color-base-active);
     --ck-color-list-button-on-background-focus: var(--ck-color-base-active-focus);
     --ck-color-list-button-on-text: var(--ck-color-base-background);
@@ -109,7 +111,8 @@
     --ck-color-link-default: hsl(190, 100%, 75%);
 
     --ck-color-base-border: #6d6d6d;
-    --ck-focus-ring: none;
+/*    --ck-focus-ring: none;*/
+--ck-focus-outer-shadow: none;
 }
 
 .ck.ck-editor__main>.ck-editor__editable {
@@ -131,11 +134,27 @@
     margin-right: 2rem;
 }
 .ck.ck-editor__editable_inline {
-    border: none
+    border: none;
 }
 .ck.ck-editor__editable_inline. ::selection {
     color: #303030;
 }
 .ck.ck-editor__editable_inline. ::-moz-selection {
     color: #303030;
+}
+
+
+.ck.ck-button:active,
+.ck.ck-button:focus,
+a.ck.ck-button:active,
+a.ck.ck-button:focus {
+    box-shadow: none;
+}
+
+.ck.ck-list__item .ck-button.ck-on {
+    color: #d1d1d1;
+}
+
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+    border: none;
 }
